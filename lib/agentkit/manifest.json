@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "version": "1.0.0",
+  "product": "pipmcp",
+  "credential": "PIPMCP_API_KEY",
+  "skills": [
+    {
+      "name": "pipmcp-adroll",
+      "description": "Connect AI agents to AdRoll using one PipMCP API key and actual hosted tool discovery."
+    }
+  ],
+  "files": {
+    "skills/pipmcp-adroll/SKILL.md": "2c7618b729608ce53d3534983c9359f6322335eec91ae15e4e6336daf5f9f847"
+  }
+}

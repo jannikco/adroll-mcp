@@ -1,41 +1,62 @@
 {
   "schemaVersion": 1,
-  "status": "ready",
-  "verification": "mock-only",
-  "releaseEligible": true,
-  "maintainer": "jannikco",
-  "license": "MIT",
-  "sourceRevision": "64e61e00eab28b11b9af957783ca4803019177c43293d15703d0ba61e098b1bb",
-  "evidence": [
-    "Source-backed provider setup metadata",
-    "Offline configuration and MCP protocol tests"
-  ],
-  "provenance": [
-    "https://developers.adroll.com/portals/api/sites/adroll-arbu/liveportal/apis/adroll-organization-api/download_spec"
-  ],
   "id": "adroll-mcp",
   "kind": "mcp-setup",
   "product": "pipmcp",
   "title": "AdRoll MCP setup and connection checker",
-  "description": "Generate AdRoll MCP client configuration, inspect available tools and validate hosted endpoint access through PipMCP.",
+  "description": "Prepare AdRoll for AI workflows with a PipMCP setup doctor, authenticated discovery and coding-agent instructions.",
+  "status": "ready",
+  "verification": "mock-only",
+  "releaseEligible": false,
   "operationIds": [],
+  "maintainer": "jannikco",
+  "license": "MIT",
+  "attributionSlug": "github-adroll-mcp",
+  "sourceRevision": "7b9af06c2426aedfcad70811774eb8b8bc46f827227fefc395f75fcc4ecba7a6",
+  "qualityVersion": 2,
+  "artifactType": "setup",
+  "evidence": [
+    "Gateway HTTP transport fixtures",
+    "Generated stdio wrapper discovery/call fixtures"
+  ],
+  "provenance": [
+    "https://developers.adroll.com/portals/api/sites/adroll-arbu/liveportal/apis/adroll-organization-api/download_spec"
+  ],
+  "utility": {
+    "problem": "Prepare AdRoll and inspect your hosted setup",
+    "output": "Offline setup plan and authenticated discovery diagnostics"
+  },
   "appSlug": "adroll",
   "appName": "AdRoll",
-  "providerDocs": "https://developers.adroll.com/portals/api/sites/adroll-arbu/liveportal/apis/adroll-organization-api/download_spec",
-  "providerWebsite": "https://www.adroll.com/",
-  "authentication": {
-    "type": "oauth2_authorization_code",
-    "requiredCredentialFields": [
-      "client_id",
-      "client_secret",
-      "owner_authorization"
-    ],
-    "requiredHeaderNames": [],
-    "helpUrl": "https://developers.adroll.com/get-started",
-    "tenantRequired": false,
-    "accountParameterNames": []
+  "maintenanceOnly": true,
+  "executionAuthority": "pipmcp-gateway",
+  "version": "1.0.0",
+  "agentReady": true,
+  "capabilityEvidence": {
+    "local": {
+      "level": "Tested",
+      "operations": [
+        {
+          "name": "gateway_transport",
+          "level": "Tested",
+          "method": "contract-fixture",
+          "evidenceRefs": [
+            "Generated gateway/stdio fixtures"
+          ]
+        }
+      ],
+      "evidenceRefs": [
+        "Generated gateway/stdio fixtures"
+      ],
+      "mode": "local"
+    },
+    "managed": {
+      "level": "Documented",
+      "operations": [],
+      "evidenceRefs": [],
+      "mode": "managed"
+    }
   },
-  "attributionSlug": "github-adroll-mcp",
   "factory": "leadadapter-pipmcp",
-  "generatorVersion": 1
+  "generatorVersion": 3
 }
