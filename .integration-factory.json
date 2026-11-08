@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "status": "ready",
+  "verification": "mock-only",
+  "releaseEligible": true,
+  "maintainer": "jannikco",
+  "license": "MIT",
+  "sourceRevision": "64e61e00eab28b11b9af957783ca4803019177c43293d15703d0ba61e098b1bb",
+  "evidence": [
+    "Source-backed provider setup metadata",
+    "Offline configuration and MCP protocol tests"
+  ],
+  "provenance": [
+    "https://developers.adroll.com/portals/api/sites/adroll-arbu/liveportal/apis/adroll-organization-api/download_spec"
+  ],
+  "id": "adroll-mcp",
+  "kind": "mcp-setup",
+  "product": "pipmcp",
+  "title": "AdRoll MCP setup and connection checker",
+  "description": "Generate AdRoll MCP client configuration, inspect available tools and validate hosted endpoint access through PipMCP.",
+  "operationIds": [],
+  "appSlug": "adroll",
+  "appName": "AdRoll",
+  "providerDocs": "https://developers.adroll.com/portals/api/sites/adroll-arbu/liveportal/apis/adroll-organization-api/download_spec",
+  "providerWebsite": "https://www.adroll.com/",
+  "authentication": {
+    "type": "oauth2_authorization_code",
+    "requiredCredentialFields": [
+      "client_id",
+      "client_secret",
+      "owner_authorization"
+    ],
+    "requiredHeaderNames": [],
+    "helpUrl": "https://developers.adroll.com/get-started",
+    "tenantRequired": false,
+    "accountParameterNames": []
+  },
+  "attributionSlug": "github-adroll-mcp",
+  "factory": "leadadapter-pipmcp",
+  "generatorVersion": 1
+}
